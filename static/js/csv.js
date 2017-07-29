@@ -30,11 +30,13 @@ function hide_csv_import(){
   $('#result').empty();
   $('#upload').hide();
   $('#files').hide();
+  $('#hint').hide();
 }
 
 function show_csv_import(){
   $('#upload').show();
   $('#files').show();
+  $('#hint').show();
 }
 
 function processFile(e) {
@@ -163,7 +165,7 @@ function create_visual(ids){
 }
 
 /**
- * show delete buttons for tagged objects
+ * show/hide delete buttons next to tagged objects
  */
 function showDeletes(){
   $('#delete').hide();

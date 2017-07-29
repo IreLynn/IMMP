@@ -49,7 +49,7 @@ document.getElementById("save").addEventListener("click", function(){
     mappings: mappingString
       }, function(data) {
       });
-
+    alert("Map saved.");
 });
 
 document.getElementById("cancel").addEventListener("click", function(){
@@ -60,7 +60,7 @@ document.getElementById("cancel").addEventListener("click", function(){
 })
 
 document.getElementById("help").addEventListener("click",function(){
-    alert("To add a tag, click anywhere on the image, then click the data row you wish to tag to that location. A red X will appear which allows you to delete tags you've created. Click 'Save' in the bottom right to save your tags once you've finished.")
+    alert("To add a mapping, click anywhere on the image, then click the data row you wish to map to that location. If you click the 'Delete Mappings' button, a red X will appear next to each mapped row which allows you to delete mappings you've created. Click 'Create Mappings to return to create mode. Click 'Save' in the bottom right to save your map once you've finished.")
 });
 
 document.getElementById("deleteTags").addEventListener("click", function(){
